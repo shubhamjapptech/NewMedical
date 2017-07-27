@@ -1,0 +1,5 @@
+[28-Feb-2017 11:27:37 UTC] PHP Fatal error:  Call to undefined method Admin_Functions::radomno() in /home/repillrx/public_html/NewMedical/medicalapi/update.php on line 33
+[28-Feb-2017 11:28:18 UTC] PHP Fatal error:  Call to undefined method Admin_Functions::radomno() in /home/repillrx/public_html/NewMedical/medicalapi/update.php on line 33
+[13-Jun-2017 09:44:23 UTC] PHP Fatal error:  Call to undefined method Admin_Functions::admin_data() in /home/repillrx/public_html/NewMedical/medicalapi/update.php on line 60
+[13-Jun-2017 09:47:50 UTC] PHP Fatal error:  Call to undefined method Admin_Functions::admin_data() in /home/repillrx/public_html/NewMedical/medicalapi/update.php on line 59
+[13-Jun-2017 09:48:38 UTC] PHP Fatal error:  Call to undefined method Admin_Functions::admin_data() in /home/repillrx/public_html/NewMedical/medicalapi/update.php on line 13

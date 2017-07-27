@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuickBlox JavaScript Users code sample</title>
+  <link rel="shortcut icon" href="https://quickblox.com/favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+         <!-- User update -->
+        <div class="row">
+          <h3>User Update</h3>
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="usr_upd_id">User ID:</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="usr_upd_id" placeholder="Enter user id to update">
+              </div>
+            </div>           
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="usr_upd_full_name">New Old password:</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="old_password" placeholder="Enter new value for Login">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="usr_upd_password">New password:</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="usr_upd_password" placeholder="Enter new value for password">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="button" class="btn btn-primary" id="update" data-toggle="modal" data-target="#progressModal">Try</button>
+              </div>
+            </div>
+          </form>
+        </div>
+    <div class="col-sm-3">
+        <h3>Output</h3>
+        <textarea readonly class="form-control" rows="7" id="output_place"></textarea>
+    </div>
+    <div class="col-sm-3">
+        <h3>changeOutput</h3>
+        <textarea readonly class="form-control" rows="7" id="output_place1"></textarea>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="https://cdn.digits.com/1/sdk.js" id="digits-sdk" async></script><!-- TWITTER_DIGITS SDK -->
+  <script src="quickblox.min.js"></script>
+  <script src="config.js"></script>
+  <script src="changeuser.js"></script>
+  </body>
+</html>
