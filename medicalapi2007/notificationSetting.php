@@ -13,7 +13,9 @@ if(isset($_POST['medicine_id']) && $_POST['medicine_id']!='' && $_POST['user_id'
 	$notificaton_date	= $_POST['notification_date'];      //23-06-2017
 	$notification_time 	= $_POST['notification_time'];
 	$type 				= $_POST['type'];   //AM OR PM
-	$notificaton_status = $_POST['notificaton_status'];
+	$notificaton_status = $_POST['notificaton_status'];  //0=manual,1=custome
+	$notification_endDate = $_POST['notification_endDate'];  //23-06-2017
+	$repeatType 		  = $_POST['repeatType'];            //0=always, 1= TillEndDate 
 
 	$time  = explode(',',$notification_time);
 	$types = explode(',',$type);
@@ -23,7 +25,7 @@ if(isset($_POST['medicine_id']) && $_POST['medicine_id']!='' && $_POST['user_id'
 	for($i=0; $i<$times; $i++)
 	{
 		//$notification_date = $date->format("d-m-Y");
-		$data[] = '('."'".$medicine_id."'".','."'".$user_id."'".','."'".$prescription_id."'".','."'".$notification_type."'".','."'".$frequency."'".','."'".$notificaton_date[$i]."'".','."'".$time[$i]."'".','."'".$types[$i]."'".','."'".$notificaton_status."'".')';
+		$data[] = '('."'".$medicine_id."'".','."'".$user_id."'".','."'".$prescription_id."'".','."'".$notification_type."'".','."'".$frequency."'".','."'".$notificaton_date[$i]."'".','."'".$time[$i]."'".','."'".$types[$i]."'".','."'".$notificaton_status."'".','."'".$repeatType."'".','."'".$notification_endDate."'".')';
 	}
 	$query =implode(',', $data);
 	

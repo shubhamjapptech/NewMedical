@@ -21,7 +21,7 @@ class notification_Functions
 
     public function setNotification($query,$medicine_id)
     {
-        $set = "INSERT INTO `notification`(`medicine_id`, `user_id`, `prescription_id`, `notification_type`, `frequency`, `notification_date`, `time`, `time_type`, `notification_status`) VALUES $query";
+        $set = "INSERT INTO `notification`(`medicine_id`, `user_id`, `prescription_id`, `notification_type`, `frequency`, `notification_date`, `time`, `time_type`, `notification_status`,`repeatType`,`notification_endDate`) VALUES $query";
         //print_r($set);
         $q = mysql_query($set);
         if($q)
@@ -35,6 +35,7 @@ class notification_Functions
             return false;
         }
     }
+    
     public function notification_setting($prescription_id,$refill_name,$notification_intervel,$notification_setting)
     {
         $q ="UPDATE `patatent_tablets` SET `notification_intervel`='$notification_intervel', `notification_setting`='$notification_setting' WHERE `prescription_id`='$prescription_id' AND `medicine_name`='$refill_name'";
